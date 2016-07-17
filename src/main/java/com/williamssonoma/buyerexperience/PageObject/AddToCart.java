@@ -11,6 +11,9 @@ public class AddToCart {
 	public AddToCart (WebDriver driver){
 		this.driver = driver;
 	}
+	
+	//added comments
+	
 	private final By SELECTCARIBBEANCOLOR = By.xpath("//img[contains(@src,'/wcm/201611/0023/img64m.jpg')]");
 	private final By QUANTITY = By.className("qty");
 	private final By ADDTOCART = By.cssSelector(".btn.btn_addtobasket.btn_addtobasket_add");
