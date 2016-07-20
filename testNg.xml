@@ -5,7 +5,7 @@
 	<test name="Add To Cart UI Test">
 	    <parameter name="baseUrl" value="http://www.williams-sonoma.com/"></parameter>
 		<classes>
-			<class name = "com.williamssonoma.buyerexperience.TestObject.TryThis"></class>
+			<class name = "com.williamssonoma.buyerexperience.TestObject.ReadingFromExcel"></class>
 		</classes>
 	</test>
 </suite>

@@ -5,3 +5,4 @@ test-output*
 *html
 .classpath
 /target/
+/target/

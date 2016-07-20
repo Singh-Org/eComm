@@ -18,7 +18,7 @@ public class ReadingFromExcel {
 	@Test
 	public void TryThisTest() throws Exception{
 		
-		String filePath = "src\\test\\resources\\datasheet.xlsx";
+		String filePath = "datasheet.xlsx";
 		FileInputStream fileInputStream = null;
 		
 		try {
