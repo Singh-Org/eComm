@@ -2,6 +2,7 @@ package com.williamssonoma.buyerexperience.TestObject;
 
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Wait;
@@ -25,10 +26,9 @@ import com.williamssonoma.buyerexperience.PageObject.WelcomePopUpPage;
 public class CloseOverlay {
 	
 	
-
-
-	WebDriver driver = new FirefoxDriver();
-	WebDriverWait wait = new WebDriverWait(driver, 10);
+	
+//	WebDriver driver = new FirefoxDriver();
+//	WebDriverWait wait = new WebDriverWait(driver, 10);
 
 	
 	//String URL = "http://www.williams-sonoma.com/";
@@ -38,6 +38,9 @@ public class CloseOverlay {
 	@Test 
 	@Parameters ("baseUrl")
 	public void closeOverlayScreen(String baseurl) throws InterruptedException{
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+
 	WelcomePopUpPage welcomePopUpPage = new WelcomePopUpPage(driver, baseurl);
 	HomePage homePage = welcomePopUpPage.clickOverlayCloseButton();	
 	Cookware cookware = homePage.navigateToCookware();
@@ -58,6 +61,9 @@ public class CloseOverlay {
 	}
 	@AfterTest
 	public void afterTestCleanUp(){
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+
 		TestEnvUtil testEnvUtil = new TestEnvUtil(driver);
 		testEnvUtil.closeBrowser();
 	}
