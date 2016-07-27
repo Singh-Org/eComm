@@ -34,6 +34,9 @@ public class CloseOverlay {
 	//String URL = "http://www.williams-sonoma.com/";
 	//TestEnvUtil testEnvUtil = new TestEnvUtil(driver);
 	
+
+	@Test
+	public void newTest(){}
 	
 	@Test 
 	@Parameters ("baseUrl")
