@@ -38,6 +38,9 @@ public class CloseOverlay {
 	@Test
 	public void newTest(){}
 	
+	@Test
+	public void newTestOnFiltersBranch(){}	
+	
 	@Test 
 	@Parameters ("baseUrl")
 	public void closeOverlayScreen(String baseurl) throws InterruptedException{
